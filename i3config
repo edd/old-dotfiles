@@ -152,5 +152,5 @@ bar {
         mode hide
         hidden_state hide
         modifier Mod1
-        status_command i3status -c '~/.i3/i3status'
+        status_command ~/.i3/i3status.sh
 }
