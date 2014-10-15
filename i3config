@@ -119,6 +119,11 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+bindcode 172 exec cmus-remote -u
+bindcode 122 exec ponymix -c 0 decrease 5 
+bindcode 123 exec ponymix -c 0 increase 5
+bindcode 171 exec cmus-remote -n
+bindcode 173 exec cmus-remote -r
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
