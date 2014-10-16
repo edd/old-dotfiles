@@ -1,1 +1,10 @@
+# lexically sort filenames
+--sort-files
+
+--type-add=ruby=rake,haml
+--type-add=vim=vimrc
+--type-add=js=json
+--type-set=cucumber=feature
+--type-set=css=sass
+
 --ignore-dir=node_modules/
