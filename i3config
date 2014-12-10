@@ -27,7 +27,7 @@ font pango:DejaVu Sans Mono 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec st
+bindsym $mod+Return exec gnome-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -124,6 +124,8 @@ bindcode 122 exec ponymix -c 0 decrease 5
 bindcode 123 exec ponymix -c 0 increase 5
 bindcode 171 exec cmus-remote -n
 bindcode 173 exec cmus-remote -r
+
+bindcode 163 exec chromium http://mail.google.com
 
 # resize window (you can also use the mouse for that)
 mode "resize" {

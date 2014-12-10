@@ -34,6 +34,8 @@ Bundle 'christoomey/vim-tmux-navigator'
 Bundle 'tommcdo/vim-exchange'
 Bundle 'vim-scripts/BufOnly.vim'
 Bundle 'b4winckler/vim-angry'
+Bundle 'editorconfig/editorconfig-vim'
+Bundle 'chriskempson/vim-tomorrow-theme'
 
 call vundle#end()
 
@@ -49,7 +51,10 @@ endif
 "Indentation
 filetype plugin indent on
 set autoindent
-
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set noexpandtab
 set fileformats=unix,dos
 set fileformat=unix
 set backspace=indent,eol,start
@@ -77,6 +82,11 @@ let g:airline_theme = 'solarized'
 let g:airline_enable_branch = 1
 let g:airline_enable_syntastic = 1
 let g:airline#extensions#tabline#enabled = 1
+let g:syntastic_check_on_open=1
+let g:syntastic_enable_signs=1
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_jump = 1
+let g:syntastic_aggregate_errors = 1
 
 " airline symbols
 if !exists('g:airline_symbols')
@@ -262,3 +272,9 @@ set iskeyword+=-
 
 set exrc
 set secure
+set relativenumber
+
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
