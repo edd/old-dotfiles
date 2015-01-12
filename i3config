@@ -158,6 +158,6 @@ bindsym $mod+r mode "resize"
 bar {
         mode hide
         hidden_state hide
-        modifier Mod1
+        modifier $mod
         status_command ~/.i3/i3status.sh
 }
