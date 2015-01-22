@@ -13,7 +13,7 @@ Bundle 'tpope/vim-unimpaired'
 Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-surround'
 Bundle 'scrooloose/syntastic'
-Bundle 'bling/vim-airline'
+Bundle 'itchyny/lightline.vim'
 Bundle 'kien/ctrlp.vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'plasticboy/vim-markdown'
@@ -75,45 +75,6 @@ set guioptions+=c
 set guioptions-=t
 set guioptions-=T
 set guioptions-=e
-
-"Statusline (and powerline) config
-set laststatus=2
-let g:airline_theme = 'solarized'
-let g:airline_enable_branch = 1
-let g:airline_enable_syntastic = 1
-let g:airline#extensions#tabline#enabled = 1
-let g:syntastic_check_on_open=1
-let g:syntastic_enable_signs=1
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_jump = 1
-let g:syntastic_aggregate_errors = 1
-
-" airline symbols
-if !exists('g:airline_symbols')
-    let g:airline_symbols = {}
-endif
-let g:airline_left_sep = '⮀'
-let g:airline_right_sep = '⮂'
-if s:os == "osx"
-    let g:airline_left_sep = ''
-    let g:airline_right_sep = ''
-endif
-let g:airline_symbols.linenr = '␊'
-let g:airline_symbols.linenr = '␤'
-let g:airline_symbols.linenr = '¶'
-let g:airline_symbols.branch = '⎇ '
-let g:airline_symbols.paste = 'ρ'
-let g:airline_symbols.paste = 'Þ'
-let g:airline_symbols.paste = '∥'
-let g:airline_symbols.whitespace = 'Ξ'
-
-let g:airline#extensions#tabline#left_sep = '⮀'
-let g:airline#extensions#tabline#right_sep = '⮂'
-if s:os == "osx"
-    let g:airline#extensions#tabline#left_sep = ''
-    let g:airline#extensions#tabline#right_sep = ''
-endif
-let g:airline#extensions#branch#enabled = 1
 
 syntax on
 set foldmethod=syntax
