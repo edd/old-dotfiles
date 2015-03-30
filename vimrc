@@ -233,7 +233,6 @@ set iskeyword+=-
 
 set exrc
 set secure
-set relativenumber
 
 noremap <Up> <NOP>
 noremap <Down> <NOP>
