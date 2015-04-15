@@ -50,6 +50,8 @@ endif
 
 "Indentation
 filetype plugin indent on
+set backupdir=~/.vim/.backup//
+set directory=~/.vim/.swp//
 set autoindent
 set tabstop=4
 set softtabstop=4
