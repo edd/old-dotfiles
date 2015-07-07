@@ -139,7 +139,7 @@ endif
 
 "Colorscheme settings
 set background=dark
-colorscheme solarized
+colorscheme Tomorrow-Night-Eighties 
 
 "Make incsearch more readable
 hi! IncSearch term=standout,reverse cterm=standout,reverse ctermbg=NONE
@@ -211,6 +211,7 @@ endif
 let g:ctrlp_root_markers = ['.ctrlp_root']
 let g:ctrlp_custom_ignore = '\v[\/](node_modules|bower_components|build|out|resources\/public\/out)$'
 
+set t_Co=256
 noremap <leader>d :windo ToggleDiff<CR>
 function! ToggleDiff()
     if &diff

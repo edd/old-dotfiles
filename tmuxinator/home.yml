@@ -1,7 +1,0 @@
-# ~/.tmuxinator/home.yml
-
-name: home
-root: ~/
-
-windows:
-  - music: cmus
