@@ -8,4 +8,4 @@ source ~/.zsh/platforms/linux.zsh
 [ -f ~/.env ] && source ~/.env
 
 export PATH=./node_modules/.bin:$PATH
-[[ $TERM == eterm-color ]] && export TERM=xterm
+[[ $TERM == urxvtc ]] && export TERM=urxvtc
