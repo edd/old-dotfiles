@@ -1,6 +1,11 @@
 #!/bin/bash
 
+if ["uname -n" = "erh" ]; then
+    nm-applet &
+fi
+
 i3status -c ~/.i3/i3status | ( read LINE && echo $LINE && while :
+
 do
     read LINE
     GREEN="859900"
