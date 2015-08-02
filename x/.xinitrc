@@ -1,4 +1,2 @@
 [[ -f ~/.Xdefaults ]] && xrdb -merge ~/.Xdefaults
-
-xrandr --dpi 143
-exec i3
+[[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
