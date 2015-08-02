@@ -7,20 +7,18 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Bundle 'gmarik/Vundle.vim'
-Bundle 'altercation/vim-colors-solarized'
+Bundle 'bling/vim-airline'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-surround'
 Bundle 'scrooloose/syntastic'
-Bundle 'itchyny/lightline.vim'
 Bundle 'kien/ctrlp.vim'
 Bundle 'scrooloose/nerdtree'
 Bundle 'plasticboy/vim-markdown'
 Bundle 'jnurmine/Zenburn'
 Bundle 'othree/xml.vim'
 Bundle 'othree/html5.vim'
-Bundle 'guns/vim-clojure-static'
 Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'ack.vim'
 Bundle 'paredit.vim'
@@ -36,6 +34,7 @@ Bundle 'vim-scripts/BufOnly.vim'
 Bundle 'b4winckler/vim-angry'
 Bundle 'editorconfig/editorconfig-vim'
 Bundle 'chriskempson/vim-tomorrow-theme'
+Bundle 'altercation/vim-colors-solarized'
 
 call vundle#end()
 
@@ -63,7 +62,7 @@ set hidden
 set ruler
 set number
 set colorcolumn=80
-
+set laststatus=2
 set ignorecase
 set smartcase
 
