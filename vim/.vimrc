@@ -35,6 +35,11 @@ Bundle 'b4winckler/vim-angry'
 Bundle 'editorconfig/editorconfig-vim'
 Bundle 'chriskempson/vim-tomorrow-theme'
 Bundle 'altercation/vim-colors-solarized'
+Bundle 'wting/rust.vim'
+Bundle 'cespare/vim-toml'
+Bundle "marijnh/tern_for_vim"
+Bundle "Valloric/YouCompleteMe"
+Bundle "vim-scripts/LoremIpsum"
 
 call vundle#end()
 
