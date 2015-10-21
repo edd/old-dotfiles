@@ -1,0 +1,1 @@
+VBOX_USB=usbfs
