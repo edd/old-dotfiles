@@ -40,17 +40,11 @@ Bundle 'cespare/vim-toml'
 Bundle "marijnh/tern_for_vim"
 Bundle "Valloric/YouCompleteMe"
 Bundle "vim-scripts/LoremIpsum"
+Bundle "elixir-lang/vim-elixir"
 
 call vundle#end()
 
-let s:os = "windows"
-if has("unix")
-    let s:os = "unix"
-    let s:uname = system("uname -s")
-    if s:uname =~ "Darwin"
-        let s:os = "osx"
-    endif
-endif
+let mapleader = "\<Space>"
 
 "Indentation
 filetype plugin indent on
@@ -76,10 +70,6 @@ set hlsearch
 
 "Use console dialogs instead of popup for simple choices
 set guioptions+=c
-"Remove toolbars, tearoffs and tabs
-set guioptions-=t
-set guioptions-=T
-set guioptions-=e
 
 syntax on
 set foldmethod=syntax
@@ -88,10 +78,6 @@ set foldlevelstart=99
 
 "Make :W typo do what you want
 command W :w
-
-"Print directory of current file
-command Pfd echo expand('%:p:h')
-
 
 "Folding - unfold everything by default
 au BufRead * normal zR
@@ -132,15 +118,6 @@ endfunction
 command ToggleGStatus :call ToggleGStatus()
 nmap <F3> :ToggleGStatus<CR>
 
-if has('windows')
-    let g:ruby_path = 'C:\TeamCityBuildTools\ruby\1.9.2'
-endif
-
-"Fullscreen when entering the gui
-if has('gui')
-    au GUIEnter * simalt ~x
-endif
-
 "Colorscheme settings
 set background=dark
 colorscheme Tomorrow-Night-Eighties 
@@ -171,76 +148,11 @@ let g:SimpleJsIndenter_BriefMode = 1
 vnoremap < <gv
 vnoremap > >gv
 
-
-let g:rainbows=0
-function! ToggleRainbows()
-    let g:rainbows = !g:rainbows
-    echo g:rainbows
-    RainbowParenthesesToggle
-    RainbowParenthesesLoadRound
-    RainbowParenthesesLoadSquare
-    RainbowParenthesesLoadBraces
-    if !g:rainbows
-        "required to get built in syntax highlighting back on parens
-        syn on
-    endif
-endfunction
-command ToggleRainbows :call ToggleRainbows()
-noremap <leader>r :ToggleRainbows<CR>
-
-let g:rbpt_colorpairs = [
-    \ ['brown',       'RoyalBlue3'],
-    \ ['Darkblue',    'SeaGreen3'],
-    \ ['darkgray',    'DarkOrchid3'],
-    \ ['darkgreen',   'firebrick3'],
-    \ ['darkcyan',    'RoyalBlue3'],
-    \ ['darkred',     'SeaGreen3'],
-    \ ['darkmagenta', 'DarkOrchid3'],
-    \ ['brown',       'firebrick3'],
-    \ ['gray',        'RoyalBlue3'],
-    \ ['darkmagenta', 'DarkOrchid3'],
-    \ ['Darkblue',    'firebrick3'],
-    \ ['darkgreen',   'RoyalBlue3'],
-    \ ['darkcyan',    'SeaGreen3'],
-    \ ['darkred',     'DarkOrchid3'],
-    \ ['red',         'firebrick3'],
-    \ ]
-
-let g:paredit_electric_return = 0
-
-if filereadable(glob('~/.vimrc.local'))
-    source ~/.vimrc.local
-endif
-
 let g:ctrlp_root_markers = ['.ctrlp_root']
 let g:ctrlp_custom_ignore = '\v[\/](node_modules|bower_components|build|out|resources\/public\/out)$'
 
 set t_Co=256
 noremap <leader>d :windo ToggleDiff<CR>
-function! ToggleDiff()
-    if &diff
-        set nodiff noscrollbind
-    else
-        set diff scrollbind
-    endif
-endfunction
-command ToggleDiff :call ToggleDiff()
-
-"Vim fireplace bindings
-noremap <leader>ea :silent %Eval<CR>:Last!<CR>
-noremap <leader>ec :silent Eval<CR>:Last!<CR>
-command WeaselConnect :Piggieback (weasel.repl.websocket/repl-env :ip "0.0.0.0" :port 9001)<CR>
-
-let g:UltiSnipsExpandTrigger="<c-l>"
-let g:UltiSnipsJumpForwardTrigger="<c-j>"
-let g:UltiSnipsJumpBackwardTrigger="<c-k>"
-
-set iskeyword+=-
 
 set exrc
 set secure
-
-noremap <Up> <NOP>
-noremap <Down> <NOP>
-noremap <Left> <NOP>
-noremap <Right> <NOP>
