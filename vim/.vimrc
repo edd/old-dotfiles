@@ -8,6 +8,7 @@ call vundle#begin()
 
 Bundle 'gmarik/Vundle.vim'
 Bundle 'bling/vim-airline'
+Bundle 'tpope/vim-speeddating'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'tpope/vim-repeat'
@@ -21,7 +22,6 @@ Bundle 'othree/xml.vim'
 Bundle 'othree/html5.vim'
 Bundle 'kien/rainbow_parentheses.vim'
 Bundle 'ack.vim'
-Bundle 'paredit.vim'
 Bundle 'tpope/vim-fireplace'
 Bundle 'jiangmiao/simple-javascript-indenter'
 Bundle 'pangloss/vim-javascript'
@@ -29,7 +29,6 @@ Bundle 'SirVer/ultisnips'
 Bundle 'mustache/vim-mustache-handlebars'
 Bundle 'vim-scripts/tComment'
 Bundle 'christoomey/vim-tmux-navigator'
-Bundle 'tommcdo/vim-exchange'
 Bundle 'vim-scripts/BufOnly.vim'
 Bundle 'b4winckler/vim-angry'
 Bundle 'editorconfig/editorconfig-vim'
@@ -41,11 +40,12 @@ Bundle "marijnh/tern_for_vim"
 Bundle "Valloric/YouCompleteMe"
 Bundle "vim-scripts/LoremIpsum"
 Bundle "elixir-lang/vim-elixir"
+Plugin 'jceb/vim-orgmode'
 
 call vundle#end()
 
 let mapleader = "\<Space>"
-
+let maplocalleader = ";"
 "Indentation
 filetype plugin indent on
 set dir=~/.vimswap//,/var/tmp//,/tmp//,.
