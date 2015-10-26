@@ -6,6 +6,7 @@ set shellslash
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
+Plugin 'ekoeppen/taskpaper.vim'
 Bundle 'gmarik/Vundle.vim'
 Bundle 'bling/vim-airline'
 Bundle 'tpope/vim-speeddating'
@@ -40,7 +41,6 @@ Bundle "marijnh/tern_for_vim"
 Bundle "Valloric/YouCompleteMe"
 Bundle "vim-scripts/LoremIpsum"
 Bundle "elixir-lang/vim-elixir"
-Plugin 'jceb/vim-orgmode'
 
 call vundle#end()
 
