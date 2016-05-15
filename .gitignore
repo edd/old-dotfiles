@@ -2,3 +2,4 @@ library.db
 keyboardrc_default
 fish_history
 fishd*
+temp/*
