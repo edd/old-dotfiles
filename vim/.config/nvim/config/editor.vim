@@ -5,7 +5,7 @@ set ignorecase                  " Case insensitive search
 set smartcase
 set number
 set noswapfile
-
+set noautochdir
 " =======================
 set smartindent
 set autoindent
@@ -15,6 +15,7 @@ set softtabstop=2
 set shiftwidth=2
 set noexpandtab
 " =======================
+let NERDTreeChDirMode=0
 
 set list
 set listchars=tab:›\ ,trail:•,extends:#,nbsp:.
