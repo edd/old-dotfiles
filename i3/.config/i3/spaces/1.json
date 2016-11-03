@@ -1,0 +1,83 @@
+// vim:ts=4:sw=4:et
+{
+    // stacked split container with 1 children
+    "border": "normal",
+    "floating": "auto_off",
+    "layout": "stacked",
+    "percent": 0.7,
+    "type": "con",
+    "nodes": [
+        {
+            "border": "pixel",
+            "current_border_width": 0,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 1656,
+               "width": 1269,
+               "x": 9,
+               "y": 36
+            },
+            "name": "Atom",
+            "percent": 1,
+            "swallows": [
+               {
+               "class": "Atom$",
+               "window_role": "^browser\\-window$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+
+{
+    // stacked split container with 2 children
+    "border": "normal",
+    "floating": "auto_off",
+    "layout": "stacked",
+    "percent": 0.3,
+    "type": "con",
+    "nodes": [
+        {
+            "border": "pixel",
+            "current_border_width": 0,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 724,
+               "width": 964,
+               "x": 0,
+               "y": 0
+            },
+            "name": "Terminal",
+            "percent": 0.5,
+            "swallows": [
+               {
+               // "title": "^Terminal$",
+               // "transient_for": "^$"
+               }
+            ],
+            "type": "con"
+        },
+        {
+            "border": "pixel",
+            "current_border_width": 0,
+            "floating": "auto_off",
+            "geometry": {
+               "height": 724,
+               "width": 964,
+               "x": 0,
+               "y": 0
+            },
+            "name": "Terminal",
+            "percent": 0.5,
+            "swallows": [
+               {
+               "class": "^Gnome\\-terminal$",
+               "title": "Terminal$",
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+

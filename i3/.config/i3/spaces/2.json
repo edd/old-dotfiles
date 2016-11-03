@@ -1,0 +1,49 @@
+// vim:ts=4:sw=4:et
+{
+    "border": "pixel",
+    "current_border_width": 0,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 1682,
+       "width": 845,
+       "x": 858,
+       "y": 9
+    },
+    "name": "Google Chrome",
+    "percent": 0.5,
+    "swallows": [
+       {
+       "class": "Google\\-chrome$",
+       "instance": "^google\\-chrome$",
+       "title": "Google\\ Chrome$",
+       "transient_for": "^$",
+       "window_role": "^browser$"
+       }
+    ],
+    "type": "con"
+}
+
+{
+    "border": "pixel",
+    "current_border_width": 0,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 1701,
+       "width": 2561,
+       "x": 15,
+       "y": 15
+    },
+    "name": "Google Chrome",
+    "percent": 0.5,
+    "swallows": [
+       {
+       "class": "Google\\-chrome$",
+       "instance": "google\\-chrome$",
+       "title": "Google\\ Chrome$",
+       "transient_for": "^$",
+       "window_role": "^browser$"
+       }
+    ],
+    "type": "con"
+}
+

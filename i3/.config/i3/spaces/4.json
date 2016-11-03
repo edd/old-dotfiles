@@ -1,0 +1,25 @@
+// vim:ts=4:sw=4:et
+{
+    "border": "pixel",
+    "current_border_width": 0,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 1683,
+       "width": 1268,
+       "x": 1284,
+       "y": 9
+    },
+    "name": "WMail",
+    "percent": 1,
+    "swallows": [
+       {
+       "class": "^wmail$",
+       "instance": "^wmail$",
+       "title": "^WMail$",
+       "transient_for": "^$",
+       "window_role": "^browser\\-window$"
+       }
+    ],
+    "type": "con"
+}
+

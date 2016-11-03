@@ -1,0 +1,24 @@
+// vim:ts=4:sw=4:et
+{
+    "border": "pixel",
+    "current_border_width": 0,
+    "floating": "auto_off",
+    "geometry": {
+       "height": 1680,
+       "width": 1265,
+       "x": 1285,
+       "y": 10
+    },
+    "name": "ScudCloud",
+    "percent": 1,
+    "swallows": [
+       {
+       "class": "^Scudcloud$",
+       "instance": "^scudcloud$",
+       "title": "^ScudCloud$",
+       "transient_for": "^$"
+       }
+    ],
+    "type": "con"
+}
+
