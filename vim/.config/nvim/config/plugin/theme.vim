@@ -1,5 +1,3 @@
-call dein#add('mhartington/oceanic-next')
-
 syntax enable
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 colorscheme gruvbox
