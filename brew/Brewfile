@@ -12,6 +12,7 @@ brew "awscli"
 brew "cocoapods"
 brew "cowsay"
 brew "docker", link: false
+brew "direnv"
 brew "ffmpeg"
 brew "fish"
 brew "fzf"
