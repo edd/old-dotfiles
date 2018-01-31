@@ -1,3 +1,4 @@
 #!/bin/bash
-sudo add-apt-repository ppa:fish-shell/release-2
-sudo apt-get update
+add-apt-repository ppa:fish-shell/release-2
+apt-get update
+apt-get install fish
