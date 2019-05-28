@@ -13,7 +13,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-sensible'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-Plug 'easymotion/vim-easymotion'
+Plug 'Lenovsky/nuake'
 
 " TS
 Plug 'w0rp/ale'
@@ -70,6 +70,7 @@ let g:tagbar_type_typescript = {
 \ }                                                                               
 " Keymaps
 nnoremap <silent> <leader>f :GFile<cr>
+nnoremap <silent> <leader><return> :Nuake<cr>
 nmap <silent> <c-k> :wincmd k<CR>
 nmap <silent> <c-j> :wincmd j<CR>
 nmap <silent> <c-h> :wincmd h<CR>
